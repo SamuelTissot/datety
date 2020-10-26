@@ -1,8 +1,6 @@
 package datety
 
-import (
-	"time"
-)
+import "time"
 
 // IsSameDay returns true if both dates are on the same day, same month and same year
 func IsSameDay(t1, t2 time.Time) bool {
