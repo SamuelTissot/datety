@@ -73,3 +73,7 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 datety.iml
+/.idea/vcs.xml
+.idea/codeStyles/
+.idea/misc.xml
+.idea/modules.xml
