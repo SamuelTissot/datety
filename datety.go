@@ -4,8 +4,6 @@ import "time"
 
 // IsSameDay returns true if both dates are on the same day, same month and same year
 func IsSameDay(t1, t2 time.Time) bool {
-	t1 = t1.UTC()
-	t2 = t2.UTC()
 	y1, m1, d1 := t1.Date()
 	y2, m2, d2 := t2.Date()
 	return y1 == y2 && m1 == m2 && d1 == d2
@@ -13,8 +11,6 @@ func IsSameDay(t1, t2 time.Time) bool {
 
 // IsSameMonth return true if both date are on the same month and year
 func IsSameMonth(t1, t2 time.Time) bool {
-	t1 = t1.UTC()
-	t2 = t2.UTC()
 	y1, m1, _ := t1.Date()
 	y2, m2, _ := t2.Date()
 	return y1 == y2 && m1 == m2
@@ -22,8 +18,6 @@ func IsSameMonth(t1, t2 time.Time) bool {
 
 // IsSameYear returns true if both date are on the same year
 func IsSameYear(t1, t2 time.Time) bool {
-	t1 = t1.UTC()
-	t2 = t2.UTC()
 	y1, _, _ := t1.Date()
 	y2, _, _ := t2.Date()
 	return y1 == y2
